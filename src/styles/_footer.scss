@@ -1,0 +1,45 @@
+.footer {   
+
+    &__contato {
+        margin-bottom: 30px;
+        color: #a3a3a3;
+    }
+
+    &__links {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        font-size: 13px;
+
+        a {
+            text-decoration: none;
+            color: #a3a3a3;
+            margin-top: 8px;
+        }
+    }
+
+    &__select {
+        width: 140px;
+        padding: 8px;
+        margin-top: 16px;
+        background-color: #000;
+        border: 1px solid #a3a3a359;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        select {
+            background-color: transparent;
+            border: none;
+            height: 30px;
+            color: #fff;
+
+            option {
+                background-color: #000;
+            }
+        }
+        img {
+            height: 18px;
+            width: 18px;
+        }
+    }
+}

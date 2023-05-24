@@ -1,5 +1,76 @@
-$bgColor: rgb(124, 64, 64);  
+@use 'variaveis';
+@use 'header';
+@use 'sinopse';
+@use 'text';
+@use 'episodes';
+@use 'details';
+@use 'footer';
+@use 'semelhantes';
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    list-style: none;
+    max-width: 100%;
+    font-family: 'Noto Sans', sans-serif;
+}
 
 body {
-    background-color: $bgColor;
+    background-color: variaveis.$bgColor;
+}
+
+.button {
+    padding: 9px 12px;
+    margin-left: 8px;
+    font-size: 13px;
+    border-radius: 2px;
+}
+
+.assinar {
+    background-color: #e50914;
+    color: #fff;
+    border: none;
+    text-transform: uppercase;
+}
+
+.container {
+    padding: 0 18px 20px;
+}
+
+.hero {
+    min-height: 30vh;
+    background-image: linear-gradient(0deg,#181818 0,hsla(0,0%,9%,.987) 1.62%,hsla(0,0%,9%,.951) 3.1%,hsla(0,0%,9%,.896) 4.5%,hsla(0,0%,9%,.825) 5.8%,hsla(0,0%,9%,.741) 7.06%,hsla(0,0%,9%,.648) 8.24%,hsla(0,0%,9%,.55) 9.42%,hsla(0,0%,9%,.45) 10.58%,hsla(0,0%,9%,.352) 11.76%,hsla(0,0%,9%,.259) 12.94%,hsla(0,0%,9%,.175) 14.2%,hsla(0,0%,9%,.104) 15.5%,hsla(0,0%,9%,.049) 16.9%,hsla(0,0%,9%,.013) 18.38%,hsla(0,0%,9%,0) 20%), url(../images/imghero.jpg);
+    background-size: cover;
+}
+
+.netflix {
+    margin-top: 46px;
+    height: 90px;
+    background-image: linear-gradient(90deg,#333 5%,#181818 95%);;
+    display: flex;
+    align-items: center;
+
+    &__banner{
+        height: 80px;
+        display: flex;
+        align-items: center;
+        
+        
+        img {
+            height: 100%;
+        }
+
+        &__content {
+            display: flex;
+            flex-direction: column;
+            color: #fff;
+            font-weight: bold;
+
+            button {
+                margin: 10px 0;
+            }
+        }
+    }
+    
 }

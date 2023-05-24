@@ -1,0 +1,64 @@
+.episodes {
+    h2 {
+        color: #fff;
+        font-size: 18px;
+        margin: 5px 0;
+    }
+
+    >h3 {
+        color: #a3a3a3;
+        border-left: 1px solid #fff;
+        padding: 0 0 0 15px;
+        margin: 5px 0;
+
+    }
+
+    &__selection {
+        width: 100%;
+        background-color: transparent;
+        border: none;
+        color: #fff;
+        font-size: 20px;
+
+        option {
+            background-color: #000;
+        }
+    }
+
+    &__itens {
+        &__text {
+            h3 {
+                color: #fff;
+                font-size: 16px;
+                margin-top: 30px;
+            }
+
+            p {
+                color: #a3a3a3;
+            }
+        }
+
+        &__imgs {
+            a {
+                text-decoration: none;
+            }
+            h4 {
+                font-size: 16px;
+                color: #fff;
+            }
+            p {
+                font-size: 12px;
+            }
+
+            .flex {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+            }
+
+            &__img {
+                margin-top: 20px;
+            }
+        }
+    }
+}

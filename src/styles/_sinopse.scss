@@ -1,0 +1,41 @@
+.sinopse {
+    color: #fff;
+
+    h2 {
+        font-size: 24px;
+        margin: 10px 0;
+    }
+
+    &__spans {
+        color: #a3a3a3;
+        margin-top: 16px;
+        font-size: 14px;
+
+        a{
+            color: #a3a3a3;
+            text-decoration: none;
+        }
+
+        &__idade {
+            border: 1px solid;
+            padding: 0px 5px;
+        }
+    }
+
+    &__text {
+        font-size: 16px;
+        margin-top: 16px;
+
+        &__nowrap {
+            display: flex;
+            font-size: 14px;
+            margin-top: 16px;
+
+            span {
+                margin-right: 5px;
+                height: 100%;
+                color: #a3a3a3;
+            }
+        }
+    }
+}

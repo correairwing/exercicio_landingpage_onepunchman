@@ -1,0 +1,32 @@
+.details {
+    margin-top: 40px;
+    font-size: 16px;
+
+    h3 {
+        font-size: 18px;
+        color: #fff;
+    }
+
+    h4 {
+        color: #a3a3a3;
+    }
+
+
+    p {
+        color: #fff;
+    }
+
+    &__detail {
+        margin-top: 16px;
+    }
+
+    &__cast {
+        h4 {
+            margin-top: 10px;
+        }
+        span {
+            display: grid;
+
+        }
+    }
+}
